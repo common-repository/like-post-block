@@ -1,0 +1,63 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "roelmagdaleno/like-post-block",
+  "version": "1.4.0",
+  "title": "Like Post",
+  "category": "widgets",
+  "description": "Add a button to like any post type.",
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "default": "HandThumbUpIcon"
+    },
+    "iconWidth": {
+      "type": "number",
+      "default": 30
+    },
+    "iconColorValue": {
+      "type": "string",
+      "default": "#000000"
+    },
+    "limit": {
+      "type": "number",
+      "default": 10
+    },
+    "unlimited": {
+      "type": "boolean",
+      "default": false
+    },
+    "likeUnlike": {
+      "type": "boolean",
+      "default": false
+    },
+    "renderWithAjax": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "supports": {
+    "html": false,
+    "color": {
+      "text": true,
+      "background": false
+    },
+    "typography": {
+      "fontSize": true,
+      "__experimentalFontFamily": true,
+      "__experimentalTextDecoration": true,
+      "__experimentalFontStyle": true,
+      "__experimentalFontWeight": true,
+      "__experimentalDefaultControls": {
+        "fontSize": true
+      }
+    },
+    "spacing": {
+      "blockGap": true
+    }
+  },
+  "textdomain": "like-post-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css"
+}
